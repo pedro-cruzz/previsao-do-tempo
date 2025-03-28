@@ -1,0 +1,75 @@
+:root {
+    --cor: rgb(255, 255, 255);
+}
+
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    font-family: "Noto Sans", sans-serif;
+    font-weight: 400;
+}
+
+body {
+    background-image: url(https://img.freepik.com/free-photo/weather-effects-composition_23-2149853295.jpg?t=st=1743192315~exp=1743195915~hmac=1de92070436c1522c59c67786ce9d931c2d1361b22ee77ec6819fe6eb0701b61&w=1380);
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    height: 100vh;
+    background-size: cover;
+    width: 100vw;
+}
+
+.icon-weather, .icon-search {
+    width: 20px;
+    height: 20px;
+}
+
+.big-box {
+    color: var(--cor);
+    background-color: rgb(0, 0, 0);
+    opacity: 0.8;
+    padding: 20px;
+    width: 350px;
+    max-width: 400px;
+    border-radius: 25px;
+}
+
+input {
+    color: var(--cor);
+    width: calc(100% - 100px);
+    padding: 10px;
+    border-radius: 25px;
+    font-size: 15px;
+    border: none;
+    outline: none;
+    margin-bottom: 20px;
+    background-color: rgba(133, 133, 133, 0.289);
+}
+
+
+button {
+    background-color: rgba(133, 133, 133, 0.289);
+    border: none;
+    padding: 10px 15px;
+    border-radius: 25px;
+    cursor: pointer;
+    float: right;
+    margin-bottom: 20px;
+}
+
+h2 {
+    display: flex;
+    text-align: left;
+    margin-bottom: 20px;
+    display: flex;
+}
+
+h2 {
+    font-weight: 300;
+    font-size: 25px;
+}
+
+.little-box {
+
+}
