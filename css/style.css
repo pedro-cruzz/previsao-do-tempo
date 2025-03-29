@@ -11,7 +11,7 @@
 }
 
 body {
-  background-image: url("https://img.freepik.com/premium-photo/catastrophic-typhoon-is-causing-devastation-earth-from-outer-space-concept-natural-disasters-earth-destruction-typhoon-impacts-space-observation-global-crisis_918839-232245.jpg");
+  background-image: url("../img/background.jpg");
   display: flex;
   justify-content: center;
   align-items: center;
