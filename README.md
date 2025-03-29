@@ -1,4 +1,5 @@
 # ClimaIfElse - if "sol" else "chuva" 🌤️🌧️
+[Página GitHub pages](https://pedro-cruzz.github.io/previsao-do-tempo/)
 
 Este projeto é um aplicativo web simples que exibe a previsão do tempo em tempo real para qualquer cidade do mundo. Ele utiliza a **WeatherAPI** para buscar os dados climáticos e altera dinamicamente o fundo da página conforme as condições do tempo.
 
