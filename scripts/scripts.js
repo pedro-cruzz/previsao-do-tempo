@@ -34,7 +34,9 @@ function atualizarDadosNaTela(dados) {
   document.querySelector(".temp").innerText = `${dados.current.temp_c}°`;
   document.querySelector(".descricao").innerText = dados.current.condition.text;
   document.querySelector(".icon-weather").src = dados.current.condition.icon;
-  document.querySelector(".umidade").innerText = `Umidade: ${dados.current.humidity}%`;
+  document.querySelector(
+    ".umidade"
+  ).innerText = `Umidade: ${dados.current.humidity}%`;
 
   document.querySelector("h2").classList.remove("hidden");
   document.querySelector(".temp").classList.remove("hidden");
@@ -48,13 +50,20 @@ function atualizarDadosNaTela(dados) {
 function mudarFundo(condicao, isDay) {
   let imagemFundo = "";
 
-  if (condicao.includes("Chuva")) {
+  if (
+    condicao.includes("Chuva") ||
+    condicao.includes("Garoa") ||
+    condicao.includes("Aguaceiros fracos")
+  ) {
     imagemFundo = isDay
       ? "url('img/chuva-dia.jpg')"
       : "url('img/chuva-noite.jpg')";
   } else if (condicao.includes("Sol") || condicao.includes("Claro")) {
     imagemFundo = "url('img/sol.jpg')";
-  } else if (condicao.includes("Parcialmente nublado") || condicao.includes("Nublado")) {
+  } else if (
+    condicao.includes("Parcialmente nublado") ||
+    condicao.includes("Encoberto")
+  ) {
     imagemFundo = isDay
       ? "url('img/dia-nublado.jpg')" // dia
       : "url('img/noite-nublada.jpg')"; //noite
@@ -62,29 +71,23 @@ function mudarFundo(condicao, isDay) {
     imagemFundo = isDay
       ? "url('img/neblina.jpg')" // dia
       : "url('img/neblina-noite.jpg')"; //noite
-  }
-  else if (condicao.includes("Céu limpo")) {
+  } else if (condicao.includes("Céu limpo")) {
     imagemFundo = isDay
       ? "url('img/sol.jpg')" // dia
       : "url('img/noite-limpa.jpg')"; // noite
   } else if (condicao.includes("Neve")) {
     imagemFundo = isDay
-      ? "url('img/sol.jpg')" // dia
-      : "url('img/noite-limpa.jpg')"; // noite
+      ? "url('img/neve-dia.jpg')" // dia
+      : "url('img/neve-noite.jpg')"; // noite
   } else if (condicao.includes("Tempestade")) {
     imagemFundo = isDay
-    ? "url('https://img.freepik.com/free-photo/background-blue-sky-with-white-clouds.jpg')" // dia
-    : "url('img/tempestade-noite.jpg')"; // noite
+      ? "url('img/tempestade-dia.jpg')" // dia
+      : "url('img/tempestade-noite.jpg')"; // noite
   } else if (condicao.includes("Vento")) {
-    imagemFundo = isDay
-      ? "url('img/sol.jpg')" // dia
-      : "url('img/noite-limpa.jpg')"; // noite
-  } else if (condicao.includes("Garoa")) {
-    imagemFundo = "url('https://img.freepik.com/free-photo/drizzle-on-window.jpg')";
+    imagemFundo = "url('img/vento.jpg')"; // vento
   } else {
     imagemFundo = "url('img/background-inicial.jpg')"; // imagem padrão
   }
 
   document.body.style.backgroundImage = imagemFundo;
 }
-
