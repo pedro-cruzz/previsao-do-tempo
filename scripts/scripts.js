@@ -77,8 +77,8 @@ function mudarFundo(condicao, isDay) {
       : "url('img/noite-limpa.jpg')"; // noite
   } else if (condicao.includes("Neve")) {
     imagemFundo = isDay
-      ? "url('img/neve-dia.jpg')" // dia
-      : "url('img/neve-noite.jpg')"; // noite
+      ? "url('https://cdn.pixabay.com/photo/2020/04/26/17/22/winter-5096285_1280.jpg')" // dia
+      : "url('https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcTJlqdZJpeU18mHX93Ox7tkgTi6Mbnij6yrUw&s')"; // noite
   } else if (condicao.includes("Tempestade")) {
     imagemFundo = isDay
       ? "url('img/tempestade-dia.jpg')" // dia
@@ -86,7 +86,7 @@ function mudarFundo(condicao, isDay) {
   } else if (condicao.includes("Vento")) {
     imagemFundo = "url('img/vento.jpg')"; // vento
   } else {
-    imagemFundo = "url('img/background-inicial.jpg')"; // imagem padrão
+    imagemFundo = "url('https://img.freepik.com/premium-photo/catastrophic-typhoon-is-causing-devastation-earth-from-outer-space-concept-natural-disasters-earth-destruction-typhoon-impacts-space-observation-global-crisis_918839-232245.jpg')"; // imagem padrão
   }
 
   document.body.style.backgroundImage = imagemFundo;
