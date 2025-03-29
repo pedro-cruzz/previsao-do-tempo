@@ -11,7 +11,7 @@
 }
 
 body {
-  background-image: url(https://img.freepik.com/free-photo/weather-effects-composition_23-2149853295.jpg?t=st=1743192315~exp=1743195915~hmac=1de92070436c1522c59c67786ce9d931c2d1361b22ee77ec6819fe6eb0701b61&w=1380);
+  background-image: url("../img/background.jpg");
   display: flex;
   justify-content: center;
   align-items: center;
@@ -63,7 +63,6 @@ h2 {
   display: flex;
   text-align: left;
   margin-bottom: 20px;
-  display: flex;
 }
 
 .little-box {
@@ -75,7 +74,7 @@ h2 {
 
 .icon-weather {
   display: none;
-  height: 100px;
+  height: 70px;
   display: flex;
   justify-content: left;
 }
@@ -83,4 +82,6 @@ h2 {
 .hidden {
   display: none;
 }
+
+
 
